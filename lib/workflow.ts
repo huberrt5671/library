@@ -17,7 +17,7 @@ import config from "@/lib/config";
           provider: resend({ token: config.env.resendToken }),
         },
         body: {
-          from: "Aihire <hello.aihackershire.online>",
+          from: "Aihire <onboarding@aihackershire.online>",
           to: [email],
           subject,
           html: message,
