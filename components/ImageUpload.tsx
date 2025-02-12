@@ -30,6 +30,7 @@ const authenticator = async () => {
     const { signature, expire, token } = data;
 
     return { token, expire, signature };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     throw new Error(`Authentication request failed: ${error.message}`);
   }
@@ -43,7 +44,7 @@ const ImageUpload = ({
   const ikUploadRef = useRef(null);
   const [file, setFile] = useState<{ filePath: string } | null>(null);
 
-  const onError = (error: any) => {
+  const onError = (error: unknown) => {
     console.log(error);
 
     toast({
@@ -53,6 +54,7 @@ const ImageUpload = ({
     });
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSuccess = (res: any) => {
     setFile(res);
     onFileChange(res.filePath);
