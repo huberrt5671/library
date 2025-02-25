@@ -15,6 +15,13 @@
       "when": 1739902368092,
       "tag": "0001_bitter_blazing_skull",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1740507171898,
+      "tag": "0002_great_doomsday",
+      "breakpoints": true
     }
   ]
 }

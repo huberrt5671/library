@@ -37,8 +37,10 @@ interface Props extends Partial<Book> {
 }
 
 const BookForm = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   type,
-  ...book,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ...book
 }: Props) => {
   const router = useRouter();
 

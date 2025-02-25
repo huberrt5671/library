@@ -19,7 +19,7 @@ const imagekit = new ImageKit({
    
 })
 
-const uploadToImageKit = async (url: string, fileName: string, folder: string) => {
+const uploadToImageKit = async (url: string, fileName: string, folder: string): Promise<string | undefined> => {
     try{
      const response = await imagekit.upload({
        file: url,
